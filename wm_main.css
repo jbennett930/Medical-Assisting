@@ -2,3 +2,35 @@
         Authors: Brenden Riley, Dylan Kelley
         Date: 4.3.19
 */
+
+#topnav {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(247, 148, 30);
+}
+
+#topnav ul {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+#topnav ul li {
+        display: inline-block;
+        width: 24%;
+        text-align: center;
+        color: rgb(0, 0, 0);
+}
+
+#topnav ul li a:link {
+        color: black;
+}
+#topnav ul li a:active {
+        color: black;
+}
+#topnav ul li a:hover {
+        color: black;
+}
+#topnav ul li a:visited {
+        color: black;
+}
