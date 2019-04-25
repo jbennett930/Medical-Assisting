@@ -35,7 +35,7 @@ body {
 }
 
 #topnav ul li a {
-        padding: 0px 40% 5px 40%;
+        width: 100%;
 }
 
 #topnav ul li a:link {
@@ -48,16 +48,21 @@ body {
 
 #topnav ul li a:hover {
         color: rgb(77, 77, 79);
-        background-color: darkorange;
+        background-color: red;
 }
 
 #topnav ul li a:visited {
         color: rgb(77, 77, 79);
 }
 
+#topnav ul li:hover {
+        background-color: red;
+}
+
 #about {
         padding: 15px;
-
+        width: 60%;
+        margin-left: 10%;
 }
 
 #about div {
@@ -71,10 +76,21 @@ body {
         text-decoration: underline;
 }
 
+#about article {
+        width: 40%;
+        float: left;
+}
+
+#about section {
+        width: 60%;
+}
+
 #ctso {
         padding: 15px;
         float: right;
         clear: both;
+        width: 60%;
+        margin-right: 10%;
 }
 
 #ctso div {
@@ -88,9 +104,20 @@ body {
         text-decoration: underline;
 }
 
+#ctso article {
+        width: 40%;
+        float: right;
+}
+
+#ctso section {
+        width: 60%;
+}
+
 #contact {
         padding: 15px;
         clear: both;
+        width: 60%;
+        margin-left: 10%;
 }
 
 #contact div {
@@ -102,4 +129,28 @@ body {
         font-size: 4em;
         clear: both;
         text-decoration: underline;
+}
+
+#contact article {
+        width: 40%;
+        float: left;
+}
+
+#contact section {
+        width: 60%;
+}
+
+#aboutImg {
+        float: right;
+        width: 40%;
+}
+
+#ctsoImg {
+        float: left;
+        width: 40%;
+}
+
+#contactImg {
+        float: right;
+        width: 40%;
 }
