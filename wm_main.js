@@ -6,7 +6,8 @@
 window.addEventListener("load", setup);
 
 function setup() {
-        setInterval("swapPics()", 1000);
+        swapPics();
+        setInterval("swapPics()", 10000);
 }
 
 function randomNumber(size) {
@@ -14,7 +15,8 @@ function randomNumber(size) {
 }
 
 function swapPics() {
-        document.getElementById("aboutImg").setAttribute("src", "pictures/Medphoto" + randomNumber(13) + ".jpg")
-        document.getElementById("ctsoImg").setAttribute("src", "pictures/Medphoto" + randomNumber(13) + ".jpg")
-        document.getElementById("contactImg").setAttribute("src", "pictures/Medphoto" + randomNumber(13) + ".jpg")
+        var randNum = randomNumber(11);
+        document.getElementById("aboutImg").setAttribute("src", "pictures/Medphoto" + (randNum) + ".jpg")
+        document.getElementById("ctsoImg").setAttribute("src", "pictures/Medphoto" + (randNum + 1) + ".jpg")
+        document.getElementById("contactImg").setAttribute("src", "pictures/Medphoto" + (randNum + 2) + ".jpg")
 }

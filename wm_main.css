@@ -13,29 +13,32 @@ body {
         margin-left: auto;
         margin-right: auto;
         background-color: rgb(247, 148, 30);
-        height: 25px;
+        height: 50px;
 }
 
 #topnav ul {
         margin-left: auto;
         margin-right: auto;
+        width: 100%;
+        height: 50px;
 }
 
 #topnav ul li {
-        display: inline-block;
+        float: left;
         width: 33.33%;
         text-align: center;
-        color: rgb(0, 0, 0);
-        border-left: 1px solid rgb(48, 13, 13);
-        border-right: 1px solid black;
-        margin: 0px;
-        padding: 0px;
-        float: left;
-        background: linear-gradient(rgb(241, 151, 41), rgb(247, 148, 30))
+        height: 50px;
+        border: 1px solid black;
 }
 
 #topnav ul li a {
+        position: relative;
+        top: 5%;
+        display: block;
+        font-size: 1.2em;
         width: 100%;
+        height: 50px;
+        padding-top: 10px;
 }
 
 #topnav ul li a:link {
@@ -48,21 +51,22 @@ body {
 
 #topnav ul li a:hover {
         color: rgb(77, 77, 79);
-        background-color: red;
+        text-shadow: 1px 1px 5px grey;
 }
 
 #topnav ul li a:visited {
         color: rgb(77, 77, 79);
 }
 
-#topnav ul li:hover {
-        background-color: red;
-}
+#topnav ul li:hover {}
 
 #about {
         padding: 15px;
-        width: 60%;
+        width: 80%;
         margin-left: 10%;
+        content: "";
+        display: table;
+        clear: both;
 }
 
 #about div {
@@ -81,16 +85,17 @@ body {
         float: left;
 }
 
-#about section {
-        width: 60%;
-}
+
 
 #ctso {
         padding: 15px;
         float: right;
         clear: both;
-        width: 60%;
+        width: 80%;
         margin-right: 10%;
+        content: "";
+        display: table;
+        clear: both;
 }
 
 #ctso div {
@@ -109,15 +114,15 @@ body {
         float: right;
 }
 
-#ctso section {
-        width: 60%;
-}
 
 #contact {
         padding: 15px;
         clear: both;
-        width: 60%;
+        width: 80%;
         margin-left: 10%;
+        content: "";
+        display: table;
+        clear: both;
 }
 
 #contact div {
@@ -136,10 +141,6 @@ body {
         float: left;
 }
 
-#contact section {
-        width: 60%;
-}
-
 #aboutImg {
         float: right;
         width: 40%;
@@ -153,4 +154,45 @@ body {
 #contactImg {
         float: right;
         width: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+        #about div {
+                float: none;
+                margin: 0px auto;
+        }
+
+        #aboutImg {
+                display: none;
+        }
+
+        #about article {
+                width: 100%;
+        }
+
+        #ctso div {
+                float: none;
+                margin: 0px auto;
+        }
+
+        #ctsoImg {
+                display: none;
+        }
+
+        #ctso article {
+                width: 100%;
+        }
+
+        #contact div {
+                float: none;
+                margin: 0px auto;
+        }
+
+        #contactImg {
+                display: none;
+        }
+
+        #contact article {
+                width: 100%;
+        }
 }
