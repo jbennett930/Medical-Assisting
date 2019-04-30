@@ -3,10 +3,23 @@
         Date: 4.3.19
 */
 
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+html {
+        width: 100%;
+        background-color: white;
+}
+
 body {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+        font-family: 'Nunito Sans', sans-serif;
+        line-height: 1.2em;
+        word-spacing: .5em;
+        letter-spacing: .1em;
+        background-color: rgb(218, 217, 216);
+        box-shadow: 3px 3px 100px;
 }
 
 #topnav {
@@ -50,15 +63,14 @@ body {
 }
 
 #topnav ul li a:hover {
-        color: rgb(77, 77, 79);
-        text-shadow: 1px 1px 5px grey;
+        color: rgb(211, 118, 26);
+        text-shadow: 1px 5px 10px white;
+        transition: ease .2s;
 }
 
 #topnav ul li a:visited {
         color: rgb(77, 77, 79);
 }
-
-#topnav ul li:hover {}
 
 #about {
         padding: 15px;
@@ -67,6 +79,7 @@ body {
         content: "";
         display: table;
         clear: both;
+        font-size: 1.2em;
 }
 
 #about div {
@@ -96,6 +109,7 @@ body {
         content: "";
         display: table;
         clear: both;
+        font-size: 1.2em;
 }
 
 #ctso div {
@@ -123,6 +137,7 @@ body {
         content: "";
         display: table;
         clear: both;
+        font-size: 1.2em;
 }
 
 #contact div {
@@ -139,6 +154,8 @@ body {
 #contact article {
         width: 40%;
         float: left;
+        margin-top: 50px;
+        line-height: 2.5em;
 }
 
 #aboutImg {
@@ -154,6 +171,20 @@ body {
 #contactImg {
         float: right;
         width: 40%;
+        margin-top: 5%;
+}
+
+#aboutImg,
+#ctsoImg,
+#contactImg {
+        box-shadow: 5px 5px 15px black;
+}
+
+#NWbutton,
+#NEbutton,
+#SWbutton {
+        float: left;
+        height: 40px;
 }
 
 @media only screen and (max-width: 600px) {
