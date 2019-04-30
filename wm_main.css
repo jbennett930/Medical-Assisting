@@ -22,6 +22,11 @@ body {
         box-shadow: 3px 3px 100px;
 }
 
+#navPic1,
+#navPic2 {
+        width: 30%;
+}
+
 #topnav {
         margin-left: auto;
         margin-right: auto;
@@ -64,7 +69,7 @@ body {
 
 #topnav ul li a:hover {
         color: rgb(211, 118, 26);
-        text-shadow: 1px 5px 10px white;
+        text-shadow: 1px 1px 10px white;
         transition: ease .2s;
 }
 
@@ -187,6 +192,37 @@ body {
         height: 40px;
 }
 
+#social1,
+#social2,
+#social3,
+#social4 {
+        width: 50px;
+}
+
+footer {
+        background-color: rgb(58, 57, 57);
+        color: rgb(230, 230, 230);
+        content: "";
+        display: table;
+        clear: both;
+        width: 100%;
+
+}
+
+footer article {
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+        width: 25%;
+        float: left;
+        margin-top: 15px;
+}
+
+#socialLogos {
+        width: 30%;
+        float: left;
+        margin-top: 15px;
+}
+
 @media only screen and (max-width: 600px) {
         #about div {
                 float: none;
@@ -225,5 +261,17 @@ body {
 
         #contact article {
                 width: 100%;
+        }
+
+        footer article {
+                width: 90%;
+
+        }
+
+        #socialLogos {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                float: none;
         }
 }
