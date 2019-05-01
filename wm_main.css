@@ -257,7 +257,19 @@ form textarea {
         width: 25%;
 }
 
-form input:onfocus @media only screen and (max-width: 600px) {
+form input:focus {
+        background-color: rgb(223, 197, 83);
+}
+
+form input:focus:valid {
+        background-color: rgb(149, 226, 149)
+}
+
+form input:focus:invalid {
+        background-color: rgb(230, 173, 173)
+}
+
+@media only screen and (max-width: 600px) {
         #about div {
                 float: none;
                 margin: 0px auto;
@@ -307,5 +319,9 @@ form input:onfocus @media only screen and (max-width: 600px) {
                 margin-left: auto;
                 margin-right: auto;
                 float: none;
+        }
+
+        form {
+                width: 80%;
         }
 }
