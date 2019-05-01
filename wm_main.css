@@ -148,7 +148,14 @@ body {
 
 #contact div {
         padding-top: 20px;
-        margin-left: 25%;
+        content: "";
+        display: table;
+        clear: both;
+        float: left;
+}
+
+#contactHead {
+        margin-left: 5%;
 }
 
 #contact h1 {
@@ -158,10 +165,10 @@ body {
 }
 
 #contact article {
-        width: 40%;
         float: left;
-        margin-top: 50px;
+        margin-top: 20px;
         line-height: 2.5em;
+        clear: left;
 }
 
 #aboutImg {
@@ -177,7 +184,6 @@ body {
 #contactImg {
         float: right;
         width: 40%;
-        margin-top: 5%;
 }
 
 #aboutImg,
