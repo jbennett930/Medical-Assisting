@@ -1,0 +1,296 @@
+/* 
+        Authors: Brenden Riley, Dylan Kelley
+        Date: 4.3.19
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+html {
+        width: 100%;
+        background-color: white;
+        min-width: 400px;
+}
+
+body {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Nunito Sans', sans-serif;
+        line-height: 1.2em;
+        word-spacing: .5em;
+        letter-spacing: .1em;
+        background-color: rgb(218, 217, 216);
+        box-shadow: 3px 3px 100px;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+}
+
+#navPic1,
+#navPic2 {
+        width: 30%;
+}
+
+#topnav {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(247, 148, 30);
+        height: 50px;
+}
+
+#topnav ul {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 50px;
+}
+
+#topnav ul li {
+        float: left;
+        width: 33.33%;
+        text-align: center;
+        height: 50px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+}
+
+/* Removes overlapping border on the right side of the last list item */
+#topnav ul li#overlap {
+        border-right: 0px;
+}
+
+#topnav ul li a {
+        position: relative;
+        top: 5%;
+        display: block;
+        font-size: 1.2em;
+        width: 100%;
+        height: 50px;
+        padding-top: 10px;
+}
+
+#topnav ul li a:link {
+        color: rgb(77, 77, 79);
+}
+
+#topnav ul li a:active {
+        color: rgb(77, 77, 79);
+}
+
+#topnav ul li a:hover {
+        color: rgb(211, 118, 26);
+        text-shadow: 1px 1px 10px white;
+        transition: ease .2s;
+}
+
+#topnav ul li a:visited {
+        color: rgb(77, 77, 79);
+}
+
+#about {
+        padding: 15px;
+        width: 80%;
+        margin-left: 10%;
+        content: "";
+        display: table;
+        clear: both;
+        font-size: 1.2em;
+}
+
+#about div {
+        padding-top: 20px;
+        margin-left: 10%;
+}
+
+#about h1 {
+        font-size: 4em;
+        clear: both;
+        text-decoration: underline;
+}
+
+#about article {
+        width: 40%;
+        float: left;
+}
+
+
+
+#ctso {
+        padding: 15px;
+        float: right;
+        clear: both;
+        width: 80%;
+        margin-right: 10%;
+        content: "";
+        display: table;
+        clear: both;
+        font-size: 1.2em;
+}
+
+#ctso div {
+        padding-top: 20px;
+        margin-left: 60%;
+}
+
+#ctso h1 {
+        font-size: 4em;
+        clear: both;
+        text-decoration: underline;
+}
+
+#ctso article {
+        width: 40%;
+        float: right;
+}
+
+
+#contact {
+        padding: 15px;
+        clear: both;
+        width: 80%;
+        margin-left: 10%;
+        content: "";
+        display: table;
+        clear: both;
+        font-size: 1.2em;
+}
+
+#contact div {
+        padding-top: 20px;
+        margin-left: 25%;
+}
+
+#contact h1 {
+        font-size: 4em;
+        clear: both;
+        text-decoration: underline;
+}
+
+#contact article {
+        width: 40%;
+        float: left;
+        margin-top: 50px;
+        line-height: 2.5em;
+}
+
+#aboutImg {
+        float: right;
+        width: 40%;
+        border: 1px solid black;
+}
+
+#ctsoImg {
+        float: left;
+        width: 40%;
+        border: 1px solid black;
+}
+
+#contactImg {
+        float: right;
+        width: 40%;
+        margin-top: 5%;
+        border: 1px solid black;
+}
+
+#aboutImg,
+#ctsoImg,
+#contactImg {
+        box-shadow: 5px 5px 15px black;
+}
+
+#NWbutton,
+#NEbutton,
+#SWbutton {
+        float: left;
+        height: 40px;
+}
+
+#social1,
+#social2,
+#social3,
+#social4 {
+        width: 50px;
+}
+
+footer {
+        background-color: rgb(58, 57, 57);
+        color: rgb(230, 230, 230);
+        content: "";
+        display: table;
+        clear: both;
+        width: 100%;
+
+}
+
+footer article {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 25%;
+        float: left;
+        margin-top: 15px;
+}
+
+#socialLogos {
+        width: 30%;
+        float: left;
+        margin-top: 15px;
+}
+
+#legalStuff {
+        clear: both;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+        #about div {
+                float: none;
+                margin: 0px auto;
+        }
+
+        #aboutImg {
+                display: none;
+        }
+
+        #about article {
+                width: 100%;
+        }
+
+        #ctso div {
+                float: none;
+                margin: 0px auto;
+        }
+
+        #ctsoImg {
+                display: none;
+        }
+
+        #ctso article {
+                width: 100%;
+        }
+
+        #contact div {
+                float: none;
+                margin: 0px auto;
+        }
+
+        #contactImg {
+                display: none;
+        }
+
+        #contact article {
+                width: 100%;
+        }
+
+        footer article {
+                width: 90%;
+
+        }
+
+        #socialLogos {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                float: none;
+        }
+}
