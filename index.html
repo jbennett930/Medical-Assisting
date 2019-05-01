@@ -76,16 +76,16 @@
     <form action="POST">
         <p>Give Us Feedback</p>
         <div id="clientInfo">
-            <label for="fname">First Name *</label>
+            <label for="fname">First Name*</label>
             <input name="fname" id="fname" type="text" required>
             <br />
-            <label for="lname">Last Name *</label>
+            <label for="lname">Last Name*</label>
             <input name="lname" id="lname" type="text" required>
             <br />
-            <label for="">E-mail *</label>
+            <label for="">E-mail*</label>
             <input name="email" id="email" type="email" required>
             <br />
-            <label for="cjob">Are you a Student or Parent?</label>
+            <label for="cjob">Are you a Student or Parent?*</label>
             <div>
                 Student<input name="cjob" value="student" type="radio" required>
                 Parent<input name="cjob" value="parent" type="radio" required>
@@ -97,6 +97,7 @@
             0<input type="range" min="0" max="5" step="1" required>5
         </div>
         <br />
+        <label for="">Anything you want us to know?</label>
         <textarea name="" id="" cols="30" rows="10"></textarea>
         <button>Submit</button>
     </form>

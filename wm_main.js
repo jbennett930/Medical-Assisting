@@ -5,6 +5,15 @@
 
 window.addEventListener("load", setup);
 
+window.onload = setForm;
+
+function setForm() {
+        document.forms[0].onsubmit = function () {
+                if (this.checkValidity()) alert("Thank you for your feedback");
+                return false;
+        }
+}
+
 function setup() {
         swapPics();
         setInterval("swapPics()", 10000);
