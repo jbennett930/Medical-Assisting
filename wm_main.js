@@ -51,7 +51,7 @@ function changeContactInfo() {
                 var newContactElement1 = document.createElement("p");
                 var newContactElement2 = document.createElement("p");
                 var newPhone = document.createElement("p");
-                newContactElement1.appendChild(document.createTextNode("1617 W Williams Dr."));
+                newContactElement1.appendChild(document.createTextNode("1617 W. Williams Dr."));
                 newContactElement2.appendChild(document.createTextNode("Phoenix, AZ 85027"));
                 newPhone.appendChild(document.createTextNode("623.435.4920"));
                 contactInfo.appendChild(newContactElement1);
