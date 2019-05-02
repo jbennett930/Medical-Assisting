@@ -21,6 +21,7 @@ body {
         letter-spacing: .1em;
         background-color: rgb(218, 217, 216);
         box-shadow: 3px 3px 100px;
+        border: 1px solid black;
 }
 
 #navPic1,
@@ -47,7 +48,14 @@ body {
         width: 33.33%;
         text-align: center;
         height: 50px;
-        border: 1px solid black;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+}
+
+/* Removes overlapping border on the right side of the last list item */
+#topnav ul li#overlap {
+        border-right: 0px;
 }
 
 #topnav ul li a {
@@ -174,16 +182,19 @@ body {
 #aboutImg {
         float: right;
         width: 40%;
+        border: 1px solid black;
 }
 
 #ctsoImg {
         float: left;
         width: 40%;
+        border: 1px solid black;
 }
 
 #contactImg {
         float: right;
         width: 40%;
+        border: 1px solid black;
 }
 
 #aboutImg,
@@ -213,7 +224,7 @@ footer {
         display: table;
         clear: both;
         width: 100%;
-
+        border-top: 1px solid black;
 }
 
 footer article {
