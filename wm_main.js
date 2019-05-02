@@ -5,6 +5,15 @@
 
 window.addEventListener("load", setup);
 
+window.onload = setForm;
+
+function setForm() {
+        document.forms[0].onsubmit = function () {
+                if (this.checkValidity()) alert("Thank you for your feedback");
+                return false;
+        }
+}
+
 function setup() {
         swapPics();
         setInterval("swapPics()", 10000);
@@ -60,3 +69,9 @@ function changeContactInfo() {
         }
 
 }
+
+var firstNames = ["Issac", "Jospeh", "James", "Matthew", "Trisha", "Alexis", "Michael", "Connor", "Spencer", "Mary"];
+var lastNames = ["Jones", "White", "Williams", "Brown", "Davis", "Miller", "Wilson", "Smith", "Johnson", "Anderson"];
+
+document.getElementById("fname").setAttribute("placeholder", firstNames[randomNumber(10) - 1]);
+document.getElementById("lname").setAttribute("placeholder", lastNames[randomNumber(10) - 1]);
