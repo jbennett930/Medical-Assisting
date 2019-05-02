@@ -113,11 +113,22 @@ body {
 }
 
 #about article {
+        margin-left: 1%;
         width: 40%;
         float: left;
 }
 
+#about p {
+        text-align: center;
+        text-indent: 5%;
+        word-spacing: 3px;
+}
 
+#ctso p {
+        text-align: center;
+        text-indent: 5%;
+        word-spacing: 3px;
+}
 
 #ctso {
         padding: 15px;
@@ -137,6 +148,9 @@ body {
 }
 
 #ctso h1 {
+        position: relative;
+        top: 50%;
+        left: 25%;
         font-size: 4em;
         clear: both;
         text-decoration: underline;
@@ -175,6 +189,12 @@ body {
         font-size: 4em;
         clear: both;
         text-decoration: underline;
+}
+
+#contact p {
+        word-spacing: 3px;
+        position: relative;
+        left: 20%;
 }
 
 #contact article {
