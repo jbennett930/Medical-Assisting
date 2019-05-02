@@ -3,6 +3,7 @@
         Date: 4.3.19
 */
 
+
 window.addEventListener("load", setup);
 
 window.onload = setForm;
@@ -75,3 +76,10 @@ var lastNames = ["Jones", "White", "Williams", "Brown", "Davis", "Miller", "Wils
 
 document.getElementById("fname").setAttribute("placeholder", firstNames[randomNumber(10) - 1]);
 document.getElementById("lname").setAttribute("placeholder", lastNames[randomNumber(10) - 1]);
+
+function wordCountCheck() {
+        var feedbackCount = document.getElementById("cFeedback").textLength;
+        document.getElementById("feedWordCount").innerText = "" + feedbackCount + "/1000"
+}
+document.getElementById("cFeedback").onkeydown = wordCountCheck;
+document.getElementById("cFeedback").onkeyup = wordCountCheck;

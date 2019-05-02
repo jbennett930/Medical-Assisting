@@ -296,6 +296,11 @@ form textarea {
         width: 25%;
 }
 
+#feedWordCount {
+        font-size: .7em;
+        letter-spacing: 0.05em;
+}
+
 form input:focus {
         background-color: rgb(223, 197, 83);
 }
