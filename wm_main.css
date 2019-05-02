@@ -24,9 +24,14 @@ body {
         border: 1px solid black;
 }
 
-#navPic1,
-#navPic2 {
+#navPic1 {
         width: 30%;
+        margin-left: 22%;
+}
+
+#navPic2 {
+        margin-top: 1%;
+        width: 20%;
 }
 
 #topnav {
@@ -108,11 +113,22 @@ body {
 }
 
 #about article {
+        margin-left: 1%;
         width: 40%;
         float: left;
 }
 
+#about p {
+        text-align: center;
+        text-indent: 5%;
+        word-spacing: 3px;
+}
 
+#ctso p {
+        text-align: center;
+        text-indent: 5%;
+        word-spacing: 3px;
+}
 
 #ctso {
         padding: 15px;
@@ -132,6 +148,9 @@ body {
 }
 
 #ctso h1 {
+        position: relative;
+        top: 50%;
+        left: 25%;
         font-size: 4em;
         clear: both;
         text-decoration: underline;
@@ -172,6 +191,12 @@ body {
         text-decoration: underline;
 }
 
+#contact p {
+        word-spacing: 3px;
+        position: relative;
+        left: 20%;
+}
+
 #contact article {
         float: left;
         margin-top: 20px;
@@ -195,6 +220,7 @@ body {
         float: right;
         width: 40%;
         border: 1px solid black;
+        margin-top: -10%;
 }
 
 #aboutImg,
@@ -249,9 +275,7 @@ footer article {
 }
 
 form {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5%;
+        margin: 5% auto;
         padding: 3%;
         border: 4px solid rgb(54, 54, 54);
         width: 40%;
