@@ -21,8 +21,7 @@ body {
         letter-spacing: .1em;
         background-color: rgb(218, 217, 216);
         box-shadow: 3px 3px 100px;
-        border-left: 1px solid black;
-        border-right: 1px solid black;
+        border: 1px solid black;
 }
 
 #navPic1,
@@ -195,7 +194,6 @@ body {
 #contactImg {
         float: right;
         width: 40%;
-        margin-top: 5%;
         border: 1px solid black;
 }
 
@@ -226,7 +224,7 @@ footer {
         display: table;
         clear: both;
         width: 100%;
-
+        border-top: 1px solid black;
 }
 
 footer article {
