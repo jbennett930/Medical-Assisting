@@ -244,6 +244,7 @@ body {
 }
 
 footer {
+        text-align: center;
         background-color: rgb(58, 57, 57);
         color: rgb(230, 230, 230);
         content: "";
@@ -254,7 +255,7 @@ footer {
 }
 
 footer article {
-        margin-left: 5%;
+        margin-left: 15%;
         margin-right: 5%;
         width: 25%;
         float: left;
@@ -265,6 +266,7 @@ footer article {
         width: 30%;
         float: left;
         margin-top: 15px;
+        margin-left: 10%;
 }
 
 #legalStuff {
@@ -294,6 +296,11 @@ form textarea {
 
 #clientInfo label {
         width: 25%;
+}
+
+#feedWordCount {
+        font-size: .7em;
+        letter-spacing: 0.05em;
 }
 
 form input:focus {

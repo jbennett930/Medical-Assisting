@@ -3,6 +3,7 @@
         Date: 4.3.19
 */
 
+
 window.addEventListener("load", setup);
 
 window.onload = setForm;
@@ -50,7 +51,7 @@ function changeContactInfo() {
                 var newContactElement1 = document.createElement("p");
                 var newContactElement2 = document.createElement("p");
                 var newPhone = document.createElement("p");
-                newContactElement1.appendChild(document.createTextNode("1617 W Williams Dr."));
+                newContactElement1.appendChild(document.createTextNode("1617 W. Williams Dr."));
                 newContactElement2.appendChild(document.createTextNode("Phoenix, AZ 85027"));
                 newPhone.appendChild(document.createTextNode("623.435.4920"));
                 contactInfo.appendChild(newContactElement1);
@@ -75,3 +76,10 @@ var lastNames = ["Jones", "White", "Williams", "Brown", "Davis", "Miller", "Wils
 
 document.getElementById("fname").setAttribute("placeholder", firstNames[randomNumber(10) - 1]);
 document.getElementById("lname").setAttribute("placeholder", lastNames[randomNumber(10) - 1]);
+
+function wordCountCheck() {
+        var feedbackCount = document.getElementById("cFeedback").textLength;
+        document.getElementById("feedWordCount").innerText = "" + feedbackCount + "/1000"
+}
+document.getElementById("cFeedback").onkeydown = wordCountCheck;
+document.getElementById("cFeedback").onkeyup = wordCountCheck;
