@@ -105,8 +105,4 @@ function validation() {
         } else {
                 email.setCustomValidity("")
         }
-        var cjob = document.getElementById("")
-        if (condition) {
-
-        }
 }
