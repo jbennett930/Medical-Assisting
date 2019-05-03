@@ -5,12 +5,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
+/* Sets the width of the html to 100%, with a background color of white and minimum width of 400px. */
 html {
         width: 100%;
         background-color: white;
         min-width: 400px;
 }
 
+/* Sets the width of the body to 90% and sets it's left and right margin to auto centering it on the page. Sets the font, line height, word spacing, and letter spacing of the body, and sets it's background color to a light gray with a box shadow and border. */
 body {
         width: 90%;
         margin-left: auto;
