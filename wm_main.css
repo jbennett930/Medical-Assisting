@@ -176,7 +176,6 @@ body {
 #contact div {
         padding-top: 20px;
         content: "";
-        display: table;
         clear: both;
         float: left;
 }
@@ -337,6 +336,26 @@ section#pdfs {
         font-weight: 800;
 }
 
+.mapouter {
+        position: relative;
+        text-align: right;
+        height: 500px;
+        width: 600px;
+}
+
+.gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 500px;
+        width: 600px;
+}
+
+#map1,
+#map2,
+#map3 {
+        display: none;
+}
+
 @media only screen and (max-width: 600px) {
         #about div {
                 float: none;
@@ -490,5 +509,16 @@ section#pdfs {
                 left: 0%;
                 right: 0%;
                 text-align: center;
+        }
+
+        footer article {
+                width: 40%;
+                margin-left: 5%;
+
+        }
+
+        #socialLogos {
+                width: 40%;
+                margin-left: 0px;
         }
 }
