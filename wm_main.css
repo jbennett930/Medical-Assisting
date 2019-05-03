@@ -300,11 +300,10 @@ footer article {
 }
 
 form {
-        margin: 0% auto 5% auto;
+        margin: 0% 7% 5% auto;
         padding: 3%;
         border: 4px solid rgb(54, 54, 54);
         width: 40%;
-
 }
 
 form p {
