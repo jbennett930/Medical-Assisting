@@ -199,6 +199,20 @@ iframe {
         border: 1px solid black;
 }
 
+.mapouter {
+        position: relative;
+        text-align: right;
+        height: 500px;
+        width: 500px;
+}
+
+.gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 500px;
+        width: 500px;
+}
+
 #contact div {
         padding-top: 20px;
         content: "";
@@ -217,7 +231,7 @@ iframe {
         text-align: center;
         word-spacing: 3px;
         position: relative;
-        right: 15%;
+        left: 17%;
 }
 
 #contact article {
