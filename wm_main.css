@@ -438,3 +438,77 @@ section#pdfs {
                 float: none;
         }
 }
+
+/* TABLET STYLES */
+@media only screen and (min-width: 600px) and (max-width:1000px) {
+        #about article {
+                float: none;
+                width: 90%;
+        }
+
+        #about div {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+        }
+
+
+
+        #aboutImg {
+                float: none;
+                margin-left: 20%;
+                margin-right: 20%;
+                width: 60%;
+        }
+
+        #ctso article {
+                float: none;
+                width: 90%;
+        }
+
+        #ctso div {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+        }
+
+        #ctso div h1 {
+                left: 0%;
+        }
+
+        #ctsoImg {
+                float: none;
+                margin-left: 20%;
+                margin-right: 20%;
+                width: 60%;
+        }
+
+        #contact article {
+                float: none;
+                width: 90%;
+        }
+
+        #contact div {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                float: none;
+        }
+
+        #contactImg {
+                float: none;
+                margin-left: 20%;
+                margin-right: 20%;
+                width: 60%;
+                display: none;
+        }
+
+        #contactArticle p {
+                margin-left: auto;
+                margin-right: auto;
+                float: none;
+                left: 0%;
+                right: 0%;
+                text-align: center;
+        }
+}
