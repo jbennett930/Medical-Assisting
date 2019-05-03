@@ -338,10 +338,32 @@ form input:focus:invalid {
         background-color: rgb(230, 173, 173)
 }
 
+section#pdfs {
+        border: 5px solid black;
+        width: 30%;
+        float: left;
+        margin-left: 10%;
+        padding: 3%;
+}
+
+#pdfs h4 {
+        text-decoration: underline;
+}
+
+#pdfs a {
+        text-decoration: none;
+        color: rgb(243, 147, 29);
+        font-size: 1.2em;
+        font-weight: 800;
+}
+
 @media only screen and (max-width: 600px) {
         #about div {
                 float: none;
                 margin: 0px auto;
+                content: "";
+                display: table;
+                clear: both;
         }
 
         #aboutImg {
@@ -355,6 +377,13 @@ form input:focus:invalid {
         #ctso div {
                 float: none;
                 margin: 0px auto;
+                content: "";
+                display: table;
+                clear: both;
+        }
+
+        #ctso h1 {
+                left: 0%;
         }
 
         #ctsoImg {
@@ -368,6 +397,9 @@ form input:focus:invalid {
         #contact div {
                 float: none;
                 margin: 0px auto;
+                content: "";
+                display: table;
+                clear: both;
         }
 
         #contactImg {
@@ -380,7 +412,7 @@ form input:focus:invalid {
 
         footer article {
                 width: 90%;
-
+                margin-left: 5%;
         }
 
         #socialLogos {
@@ -392,5 +424,17 @@ form input:focus:invalid {
 
         form {
                 width: 80%;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 10%;
+                float: none;
+                clear: both;
+        }
+
+        section#pdfs {
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+                float: none;
         }
 }
