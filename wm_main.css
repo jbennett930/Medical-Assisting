@@ -5,12 +5,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
+/* Sets the width of the html to 100%, with a background color of white and minimum width of 400px. */
 html {
         width: 100%;
         background-color: white;
         min-width: 400px;
 }
 
+/* Sets the width of the body to 90% and sets it's left and right margin to auto centering it on the page. Sets the font, line height, word spacing, and letter spacing of the body, and sets it's background color to a light gray with a box shadow and border. */
 body {
         width: 90%;
         margin-left: auto;
@@ -199,6 +201,20 @@ iframe {
         border: 1px solid black;
 }
 
+.mapouter {
+        position: relative;
+        text-align: right;
+        height: 500px;
+        width: 500px;
+}
+
+.gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 500px;
+        width: 500px;
+}
+
 #contact div {
         padding-top: 20px;
         content: "";
@@ -216,7 +232,7 @@ iframe {
         text-align: center;
         word-spacing: 3px;
         position: relative;
-        right: 15%;
+        left: 17%;
 }
 
 #contact article {
@@ -299,11 +315,10 @@ footer article {
 }
 
 form {
-        margin: 0% auto 5% auto;
+        margin: 0% 7% 5% auto;
         padding: 3%;
         border: 4px solid rgb(54, 54, 54);
         width: 40%;
-
 }
 
 form p {
