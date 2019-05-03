@@ -37,6 +37,9 @@ function swapPics() {
 function changeContactInfo() {
         var contactInfo = document.getElementById("contactArticle")
         contactInfo.innerHTML = "";
+        document.getElementById("map1").style.display = "none";
+        document.getElementById("map2").style.display = "none";
+        document.getElementById("map3").style.display = "none";
         if (event.target.value == 1) {
                 var newContactElement1 = document.createElement("p");
                 var newContactElement2 = document.createElement("p");
@@ -47,6 +50,7 @@ function changeContactInfo() {
                 contactInfo.appendChild(newContactElement1);
                 contactInfo.appendChild(newContactElement2);
                 contactInfo.appendChild(newPhone);
+                document.getElementById("map1").style.display = "block";
         } else if (event.target.value == 2) {
                 var newContactElement1 = document.createElement("p");
                 var newContactElement2 = document.createElement("p");
@@ -57,6 +61,7 @@ function changeContactInfo() {
                 contactInfo.appendChild(newContactElement1);
                 contactInfo.appendChild(newContactElement2);
                 contactInfo.appendChild(newPhone);
+                document.getElementById("map2").style.display = "block";
         } else if (event.target.value == 3) {
                 var newContactElement1 = document.createElement("p");
                 var newContactElement2 = document.createElement("p");
@@ -67,6 +72,7 @@ function changeContactInfo() {
                 contactInfo.appendChild(newContactElement1);
                 contactInfo.appendChild(newContactElement2);
                 contactInfo.appendChild(newPhone);
+                document.getElementById("map3").style.display = "block";
         }
 
 }
