@@ -83,3 +83,26 @@ function wordCountCheck() {
 }
 document.getElementById("cFeedback").onkeydown = wordCountCheck;
 document.getElementById("cFeedback").onkeyup = wordCountCheck;
+
+document.getElementById("submit").onclick = validation;
+
+function validation() {
+        var fname = document.getElementById("fname");
+        if (fname.validity.valueMissing) {
+                fname.setCustomValidity("Please enter your first name");
+        } else {
+                fname.setCustomValidity("");
+        }
+        var lname = document.getElementById("lname");
+        if (lname.validity.valueMissing) {
+                lname.setCustomValidity("Please enter your last name")
+        } else {
+                lname.setCustomValidity("")
+        }
+        var email = document.getElementById("email");
+        if (email.validity.valueMissing) {
+                email.setCustomValidity("Please enter your email");
+        } else {
+                email.setCustomValidity("")
+        }
+}
