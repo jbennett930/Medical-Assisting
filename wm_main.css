@@ -438,7 +438,6 @@ form input:focus:invalid {
         }
 
         #contact div {
-                float: none;
                 margin: 0px auto;
                 content: "";
                 clear: both;
@@ -484,6 +483,7 @@ form input:focus:invalid {
         #map2,
         #map3 {
                 display: none;
+                width: 100%;
         }
 }
 
@@ -594,5 +594,6 @@ form input:focus:invalid {
         #map2,
         #map3 {
                 display: none;
+                width: 100%;
         }
 }
