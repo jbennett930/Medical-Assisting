@@ -216,10 +216,12 @@ iframe {
 }
 
 #contact div {
-        padding-top: 20px;
+        margin-top: 3%;
         content: "";
         clear: both;
         float: left;
+        position: relative;
+        right: 1%;
 }
 
 #contact h1 {
@@ -382,8 +384,11 @@ form input:focus:invalid {
 .gmap_canvas {
         overflow: hidden;
         background: none !important;
-        height: 500px;
-        width: 600px;
+        height: 400px;
+        width: 400px;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+        padding: 0px;
 }
 
 #map1,
