@@ -381,7 +381,6 @@ form input:focus:invalid {
         position: relative;
         text-align: right;
         height: 500px;
-        width: 600px;
 }
 
 .gmap_canvas {
@@ -483,7 +482,16 @@ form input:focus:invalid {
         #map2,
         #map3 {
                 display: none;
+        }
+
+        .mapouter {
+                width: 340px;
+        }
+
+        .gmap_canvas {
                 width: 100%;
+                margin-left: auto;
+                margin-right: auto;
         }
 }
 
@@ -595,5 +603,11 @@ form input:focus:invalid {
         #map3 {
                 display: none;
                 width: 100%;
+        }
+
+        .gmap_canvas {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
         }
 }
