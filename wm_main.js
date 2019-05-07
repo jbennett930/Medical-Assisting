@@ -21,6 +21,17 @@ function setup() {
         document.getElementById("NWbutton").addEventListener("click", changeContactInfo)
         document.getElementById("NEbutton").addEventListener("click", changeContactInfo)
         document.getElementById("SWbutton").addEventListener("click", changeContactInfo)
+        window.onresize = function () {
+                document.getElementById("map1").style.display = "none";
+                document.getElementById("map2").style.display = "none";
+                document.getElementById("map3").style.display = "none";
+
+                console.log(document.body.scrollWidth);
+                console.log(document.documentElement.scrollWidth);
+                console.log(document.body.offsetWidth);
+                console.log(document.documentElement.offsetWidth);
+                console.log(document.documentElement.clientWidth);
+        }
 }
 
 function randomNumber(size) {
@@ -35,6 +46,7 @@ function swapPics() {
 }
 
 function changeContactInfo() {
+
         var contactInfo = document.getElementById("contactArticle")
         contactInfo.innerHTML = "";
         document.getElementById("map1").style.display = "none";
@@ -50,7 +62,9 @@ function changeContactInfo() {
                 contactInfo.appendChild(newContactElement1);
                 contactInfo.appendChild(newContactElement2);
                 contactInfo.appendChild(newPhone);
-                document.getElementById("map1").style.display = "block";
+                if (document.documentElement.offsetWidth > 1000) {
+                        document.getElementById("map1").style.display = "block";
+                }
         } else if (event.target.value == 2) {
                 var newContactElement1 = document.createElement("p");
                 var newContactElement2 = document.createElement("p");
@@ -61,7 +75,9 @@ function changeContactInfo() {
                 contactInfo.appendChild(newContactElement1);
                 contactInfo.appendChild(newContactElement2);
                 contactInfo.appendChild(newPhone);
-                document.getElementById("map2").style.display = "block";
+                if (document.documentElement.offsetWidth > 1000) {
+                        document.getElementById("map2").style.display = "block";
+                }
         } else if (event.target.value == 3) {
                 var newContactElement1 = document.createElement("p");
                 var newContactElement2 = document.createElement("p");
@@ -72,9 +88,10 @@ function changeContactInfo() {
                 contactInfo.appendChild(newContactElement1);
                 contactInfo.appendChild(newContactElement2);
                 contactInfo.appendChild(newPhone);
-                document.getElementById("map3").style.display = "block";
+                if (document.documentElement.offsetWidth > 1000) {
+                        document.getElementById("map3").style.display = "block";
+                }
         }
-
 }
 
 var firstNames = ["Issac", "Jospeh", "James", "Matthew", "Trisha", "Alexis", "Michael", "Connor", "Spencer", "Mary"];
