@@ -206,8 +206,6 @@ iframe {
 .mapouter {
         position: relative;
         text-align: right;
-        height: 500px;
-        width: 500px;
 }
 
 .gmap_canvas {
@@ -380,8 +378,6 @@ form input:focus:invalid {
 .mapouter {
         position: relative;
         text-align: right;
-        height: 500px;
-        width: 600px;
 }
 
 .gmap_canvas {
@@ -438,7 +434,6 @@ form input:focus:invalid {
         }
 
         #contact div {
-                float: none;
                 margin: 0px auto;
                 content: "";
                 clear: both;
@@ -594,6 +589,7 @@ form input:focus:invalid {
         #map2,
         #map3 {
                 display: none;
+                width: 100%;
         }
 
         section#about article {
