@@ -25,12 +25,6 @@ function setup() {
                 document.getElementById("map1").style.display = "none";
                 document.getElementById("map2").style.display = "none";
                 document.getElementById("map3").style.display = "none";
-
-                console.log(document.body.scrollWidth);
-                console.log(document.documentElement.scrollWidth);
-                console.log(document.body.offsetWidth);
-                console.log(document.documentElement.offsetWidth);
-                console.log(document.documentElement.clientWidth);
         }
 }
 
