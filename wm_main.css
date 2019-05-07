@@ -3,7 +3,14 @@
         Date: 4.3.19
 */
 
+/* ================== */
+/* Imported Web Fonts */
+/* ================== */
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+/* ================= */
+/* Structural Styles */
+/* ================= */
 
 /* Sets the width of the html to 100%, with a background color of white and minimum width of 400px. */
 html {
@@ -26,16 +33,23 @@ body {
         border: 1px solid black;
 }
 
+/* ============= */
+/* Header Styles */
+/* ============= */
+
+/* Sets the width of the West-MEC logo to 30%, and gives it a 22% left margin to position it in the center of the header. */
 #navPic1 {
         width: 30%;
         margin-left: 22%;
 }
 
+/* Sets the width of the Medical Assisting logo to 20%, and gives it a 1% top margin to set some space between the logo and the top of the page. */
 #navPic2 {
         margin-top: 1%;
         width: 20%;
 }
 
+/* Centers the navigation menu by setting the left and right marigns to auto, with an orange backgound color, and a height of 50px. */
 #topnav {
         margin-left: auto;
         margin-right: auto;
@@ -43,6 +57,7 @@ body {
         height: 50px;
 }
 
+/* Centers the unordered list nested within the navigation menu and sets the width to 100% and height to 50px. */
 #topnav ul {
         margin-left: auto;
         margin-right: auto;
@@ -50,6 +65,7 @@ body {
         height: 50px;
 }
 
+/* Targets each list item within the ordered list nested in the navigation menu to float them along the left margin with a width of 33.33%, align the text to the center of the element, set the height to 50px, and set a border on every side except the left. (This is set due to an issue with overlapping borders) */
 #topnav ul li {
         float: left;
         width: 33.33%;
@@ -65,6 +81,7 @@ body {
         border-right: 0px;
 }
 
+/* Targets each link within each list item within the ordered list nested in the navigation menu to set their position to relative and move them down from the top 5%, display them as block elements, set their width to 100%, with a font-size of 1.2em and 3% top padding. */
 #topnav ul li a {
         position: relative;
         top: 5%;
@@ -74,23 +91,20 @@ body {
         padding-top: 3%;
 }
 
-#topnav ul li a:link {
-        color: rgb(77, 77, 79);
-}
-
-#topnav ul li a:active {
-        color: rgb(77, 77, 79);
-}
-
+/* Targets each link within each list item within the ordered list nested in the navigation menu when they are hovered over to give it a slight black text shadow with a .2 second ease transition*/
 #topnav ul li a:hover {
-        color: rgb(211, 118, 26);
         text-shadow: 1px 1px 2px black;
         transition: ease .2s;
 }
 
+/* Targets each link within each list item within the ordered list nested in the navigation menu when they are visited to set their color back to gray. */
 #topnav ul li a:visited {
         color: rgb(77, 77, 79);
 }
+
+/* ==================== */
+/* About Section Styles */
+/* ==================== */
 
 #about {
         padding: 15px;
@@ -102,17 +116,20 @@ body {
         font-size: 1.2em;
 }
 
+/* Sets the about section's division element to have 20% top padding and 10% left margin. */
 #about div {
         padding-top: 20px;
         margin-left: 10%;
 }
 
+/* Sets the about section's heading to be underlined with a 4em font size. */
 #about h1 {
         font-size: 4em;
         clear: both;
         text-decoration: underline;
 }
 
+/* Floats the the about section article along the left margin with a width of 40%, 1% top margin, 2% padding, an orange background color, a black 1 pixel border, and a box shadow. */
 #about article {
         margin-left: 1%;
         width: 40%;
@@ -123,12 +140,18 @@ body {
         box-shadow: 5px 5px 15px black;
 }
 
+/* Sets the paragrapgh text in the about section to align it to the center, with a 5% text indent and 3 pixels of word spacing. */
 #about p {
         text-align: center;
         text-indent: 5%;
         word-spacing: 3px;
 }
 
+/* =================== */
+/* CTSO Section Styles */
+/* =================== */
+
+/* Sets the paragrapgh text in the ctso section to align it to the center, with a 5% text indent and 3 pixels of word spacing. */
 #ctso p {
         text-align: center;
         text-indent: 5%;
@@ -146,11 +169,13 @@ body {
         font-size: 1.2em;
 }
 
+/* Sets the ctso section's divsion element to have 20 pixels of top padding and 60% left margin. */
 #ctso div {
         padding-top: 20px;
         margin-left: 60%;
 }
 
+/* Sets the ctso section's heading to have relative postioning to move it 50% from the top and 25% from the left, clearing content in both margins with a font size of 4em and underlined text. */
 #ctso h1 {
         position: relative;
         top: 50%;
@@ -160,6 +185,7 @@ body {
         text-decoration: underline;
 }
 
+/* Sets the ctso section's article to have a width of 40%, floated along the right margin, with an orange background color and 2% padding, with a black 1 pixel border and a box shadow. */
 #ctso article {
         width: 40%;
         float: right;
@@ -169,6 +195,9 @@ body {
         box-shadow: 5px 5px 15px black;
 }
 
+/* ====================== */
+/* Contact Section Styles */
+/* ====================== */
 
 #contact {
         clear: both;
@@ -244,7 +273,9 @@ iframe {
         clear: left;
 }
 
-
+/* ============ */
+/* Image Styles */
+/* ============ */
 #aboutImg {
         float: right;
         width: 40%;
@@ -270,12 +301,20 @@ iframe {
         box-shadow: 5px 5px 15px black;
 }
 
+/* ============= */
+/* Button Styles */
+/* ============= */
+
 #NWbutton,
 #NEbutton,
 #SWbutton {
         float: left;
         height: 40px;
 }
+
+/* ============= */
+/* Footer Styles */
+/* ============= */
 
 #social1,
 #social2,
@@ -316,6 +355,10 @@ footer article {
         margin-right: auto;
         margin-top: 5%;
 }
+
+/* =========== */
+/* Form Styles */
+/* =========== */
 
 form {
         margin: 5% 7% 5% auto;
@@ -375,6 +418,10 @@ form input:focus:invalid {
         font-weight: 800;
 }
 
+/* ========== */
+/* Map Styles */
+/* ========== */
+
 .mapouter {
         position: relative;
         text-align: right;
@@ -396,6 +443,7 @@ form input:focus:invalid {
         display: none;
 }
 
+/* Media query for devices with maximum screen widths of 600 pixels */
 @media only screen and (max-width: 600px) {
         #about div {
                 float: none;
@@ -482,7 +530,7 @@ form input:focus:invalid {
         }
 }
 
-/* TABLET STYLES */
+/* Media query for devices with minimum screen widths of 600 pixels and a maximum screen width of 1000 pixels. */
 @media only screen and (min-width: 600px) and (max-width:1000px) {
         #about article {
                 float: none;
@@ -610,6 +658,7 @@ form input:focus:invalid {
         }
 }
 
+/* Mobile styles for devices smaller than a screen width of 600 pixels. */
 @media only screen and (max-width: 600px) {
         section#contact div#contactHead h1 {
                 position: relative;
