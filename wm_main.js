@@ -3,11 +3,13 @@
         Date: 4.3.19
 */
 
-
+//sets up the pages event listeners when it loads in
 window.addEventListener("load", setup);
 
+//Sets custom validity messages and the form
 window.onload = setForm;
 
+//When the form is submitted correctly it just sends an alert to the page
 function setForm() {
         document.forms[0].onsubmit = function () {
                 if (this.checkValidity()) alert("Thank you for your feedback");
@@ -15,6 +17,7 @@ function setForm() {
         }
 }
 
+// The pages load in, and then every 10 seconds will swap, the contact buttons when clicked will bring up different contact information. When the page changes in size the map will disappear to prevent problems that would otherwise occur.
 function setup() {
         swapPics();
         setInterval("swapPics()", 10000);
@@ -28,10 +31,12 @@ function setup() {
         }
 }
 
+//Generates a (pseudo) random number.
 function randomNumber(size) {
         return Math.ceil(Math.random() * size)
 }
 
+//Generates a random number and then sets up the pages pictures with no similar pictures
 function swapPics() {
         var randNum = randomNumber(9);
         document.getElementById("aboutImg").setAttribute("src", "pictures/Medphoto" + (randNum) + ".jpg")
@@ -39,13 +44,17 @@ function swapPics() {
         document.getElementById("contactImg").setAttribute("src", "pictures/Medphoto" + (randNum + 2) + ".jpg")
 }
 
+// generates different contact information depending on which button is pressed
 function changeContactInfo() {
-
+        //sets up an easier path for later
         var contactInfo = document.getElementById("contactArticle")
+        //resets the text within the page
         contactInfo.innerHTML = "";
+        //the map will not appear within the page
         document.getElementById("map1").style.display = "none";
         document.getElementById("map2").style.display = "none";
         document.getElementById("map3").style.display = "none";
+        // Depending on the value of the button pressed, will generate different contact and address information, should the page be a large enough size, it will make a map appear
         if (event.target.value == 1) {
                 var newContactElement1 = document.createElement("p");
                 var newContactElement2 = document.createElement("p");
@@ -88,19 +97,22 @@ function changeContactInfo() {
         }
 }
 
+// Names that can appear within the form as placeholder names
 var firstNames = ["Issac", "Jospeh", "James", "Matthew", "Trisha", "Alexis", "Michael", "Connor", "Spencer", "Mary"];
 var lastNames = ["Jones", "White", "Williams", "Brown", "Davis", "Miller", "Wilson", "Smith", "Johnson", "Anderson"];
 
+// Generates a different set of placeholder names within the page every time it loads
 document.getElementById("fname").setAttribute("placeholder", firstNames[randomNumber(10) - 1]);
 document.getElementById("lname").setAttribute("placeholder", lastNames[randomNumber(10) - 1]);
 
+// Runs a word count on the textarea box within the page, displaying a word count (has trouble recognizing when something is copy-pasted until keys are not pressed)
 function wordCountCheck() {
         var feedbackCount = document.getElementById("cFeedback").textLength;
         document.getElementById("feedWordCount").innerText = "" + feedbackCount + "/1000"
 }
 document.getElementById("cFeedback").onkeydown = wordCountCheck;
 document.getElementById("cFeedback").onkeyup = wordCountCheck;
-
+//runs a validation check and subsequently will set messages that will appear whenever information is not valid
 document.getElementById("submit").onclick = validation;
 
 function validation() {
