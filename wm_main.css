@@ -595,4 +595,33 @@ form input:focus:invalid {
         #map3 {
                 display: none;
         }
+
+        section#about article {
+                position: relative;
+                left: 5%;
+                margin-bottom: 10%;
+        }
+
+        section#ctso article {
+                position: relative;
+                left: 5%;
+                margin-top: 10%;
+        }
+
+        section#contact div#contactHead h1 {
+                position: relative;
+                right: 3%;
+        }
+}
+
+@media only screen and (max-width: 600px) {
+        section#contact div#contactHead h1 {
+                position: relative;
+                left: 13%;
+        }
+
+        section#contact article#contactArticle {
+                position: relative;
+                left: 10%;
+        }
 }
