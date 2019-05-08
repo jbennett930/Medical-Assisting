@@ -209,6 +209,7 @@ body {
         font-size: 1.2em;
 }
 
+/* Removes top and left margin and all padding from the contact section's heading, and sets it to relative positioning to move it 3% from the left. */
 #contact div#contactHead {
         margin-left: 0%;
         margin-top: 0%;
@@ -217,17 +218,14 @@ body {
         left: 3%;
 }
 
+/* Removes top padding from the contact section's campusButtons div element and sets it to relative positioning to move it 0% from the left. */
 #contact div#campusButtons {
         padding-top: 0%;
         position: relative;
         left: 0%;
 }
 
-#contact div#mapouter1 {
-        display: block;
-        margin-left: 15%;
-}
-
+/* Adds a black border around the iframe element that contains the map. */
 iframe {
         border: 1px solid black;
 }
@@ -253,12 +251,14 @@ iframe {
         right: 1%;
 }
 
+/* Sets the contact section's heading to have a font size of 4em, clear both margins, and underline the text. */
 #contact h1 {
         font-size: 4em;
         clear: both;
         text-decoration: underline;
 }
 
+/* Sets the contact section's paragraph elements to have centered text, 3 pixel word spacing, with relative positioning to move it 17% from the left. */
 #contact p {
         text-align: center;
         word-spacing: 3px;
@@ -266,6 +266,7 @@ iframe {
         left: 17%;
 }
 
+/* Sets the contact section's article to float along the left margin, clear the left margin, 2.5em line height, and 20 pixels top margin. */
 #contact article {
         float: left;
         margin-top: 20px;
@@ -316,6 +317,7 @@ iframe {
 /* Footer Styles */
 /* ============= */
 
+/* Sets the width of each social media logo to 50px. */
 #social1,
 #social2,
 #social3,
@@ -323,6 +325,7 @@ iframe {
         width: 50px;
 }
 
+/* Sets the footer to have centered text, a dark gray background color, a light gray text color, displayed as table, clearing both marigns, with a width of 100% and a black border on the top. */
 footer {
         text-align: center;
         background-color: rgb(58, 57, 57);
@@ -334,6 +337,7 @@ footer {
         border-top: 1px solid black;
 }
 
+/* Sets the article containing the salary information within the footer to have a width of 25%, 15% left margin, 5% right margin, 15 pixels top margin, and floated along the left margin. */
 footer article {
         margin-left: 15%;
         margin-right: 5%;
@@ -342,6 +346,7 @@ footer article {
         margin-top: 15px;
 }
 
+/* Targets the div element containing the social media logos at the bottom of the page to set the width to 30%, float it along the left margin, and give it 15 pixels top margin and 10% left margin. */
 #socialLogos {
         width: 30%;
         float: left;
@@ -349,6 +354,7 @@ footer article {
         margin-left: 10%;
 }
 
+/* Centers the copyright information at the bottom of the page and clears both margins with 5% top margin. */
 #legalStuff {
         clear: both;
         margin-left: auto;
@@ -360,6 +366,7 @@ footer article {
 /* Form Styles */
 /* =========== */
 
+/* Targets the form to add 5% top and bottom margin, add 7% right margin and leave the left to auto, set the padding to 3%, add a 4 pixel black border, and set the width to 40%. */
 form {
         margin: 5% 7% 5% auto;
         padding: 3%;
@@ -367,37 +374,45 @@ form {
         width: 40%;
 }
 
+/* Sets the font size of the form header to 1.6em. */
 form p {
         font-size: 1.6em;
 }
 
+/* Sets the maximum width of the textarea element within the form to 100% and sets the minimum width to 70%, with a maximum height of 200px. */
 form textarea {
         max-width: 100%;
         max-height: 200px;
         min-width: 70%;
 }
 
+/* Sets the width of the labels in the clientInfo div element to 25%. */
 #clientInfo label {
         width: 25%;
 }
 
+/* Sets the font size of the running word count below the text box in the form to 4em. */
 #feedWordCount {
         font-size: .7em;
         letter-spacing: 0.05em;
 }
 
+/* When the input field has focus, sets the background color to a light yellow. */
 form input:focus {
         background-color: rgb(223, 197, 83);
 }
 
+/* When the input field is valid, sets the background color to a light green. */
 form input:focus:valid {
         background-color: rgb(149, 226, 149)
 }
 
+/* When the input field is invalid, sets the background color to a light red. */
 form input:focus:invalid {
         background-color: rgb(230, 173, 173)
 }
 
+/* Creates a black border around the program inforamtion section and sets the width to 30%, floats it along the left margin, sets the left magin to 10% and top marign to 5%, with 3% padding on all sides.  */
 #pdfs {
         border: 5px solid black;
         width: 30%;
@@ -407,10 +422,12 @@ form input:focus:invalid {
         margin-top: 5%;
 }
 
+/* Sets the headings within the program information section to have underlined text. */
 #pdfs h4 {
         text-decoration: underline;
 }
 
+/* Sets the links within the program information section to remove the text underline, set the color to an orange color, and set the font size to 1.2em with 800 font weight. */
 #pdfs a {
         text-decoration: none;
         color: rgb(243, 147, 29);
@@ -437,6 +454,7 @@ form input:focus:invalid {
         padding: 0px;
 }
 
+/* Maps are displayed none as default so the JavaScript can display the correct map in response to the respective button clicked. */
 #map1,
 #map2,
 #map3 {
